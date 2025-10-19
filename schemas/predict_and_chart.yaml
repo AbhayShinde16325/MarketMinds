@@ -1,0 +1,38 @@
+tool:
+  name: predict_and_chart
+  description: >
+    Merges user-uploaded financial report with live and recent market data from Finnhub and AlphaVantage, 
+    delivering an LLM-powered prediction (numeric + reasoning) and chart-ready close price history for visualization.
+  input_schema:
+    type: object
+    properties:
+      report_url:
+        type: string
+        description: "Public or presigned S3 URL of financial report (PDF)."
+      ticker:
+        type: string
+        description: "Stock ticker symbol for market analysis (e.g. 'AAPL')."
+      user_query:
+        type: string
+        description: "Prediction or analytical task (e.g. 'Predict next quarter revenue')."
+    required: [report_url, ticker, user_query]
+  output_schema:
+    type: object
+    properties:
+      llm_answer:
+        type: string
+        description: "LLM-generated numeric prediction, full context and financial reasoning."
+      chart_data:
+        type: object
+        properties:
+          dates:
+            type: array
+            items: {type: string}
+            description: "List of date strings for plotting X-axis."
+          close_prices:
+            type: array
+            items: {type: number}
+            description: "Closing prices for each date."
+          predicted_label:
+            type: string
+            description: "Query/label for chart annotation."

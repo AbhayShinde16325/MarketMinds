@@ -1,0 +1,28 @@
+tool:
+  name: merge_analysis
+  description: >
+    Merges user-uploaded financial documents with real-time and recent stock market data from Finnhub and Alpha Vantage. 
+    Returns a user-friendly summary of key insights extracted from both the document and API data, including prices, trends, and comparisons.
+  input_schema:
+    type: object
+    properties:
+      report_url:
+        type: string
+        description: >
+          Public or presigned S3 URL of the uploaded financial document (PDF).
+      ticker:
+        type: string
+        description: >
+          Stock ticker for the company (e.g., 'AAPL', 'MSFT') to fetch relevant market data.
+    required: [report_url, ticker]
+  output_schema:
+    type: object
+    properties:
+      answer:
+        type: string
+        description: >
+          Combined, user-friendly summary analyzing both the document and live market data.
+      merged:
+        type: object
+        description: >
+          Structured merged data including a preview of the document extract, latest price, daily high/low, and recent closing prices for the specified ticker.
