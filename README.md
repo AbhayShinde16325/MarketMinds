@@ -1,11 +1,8 @@
-# MarketMinds
-<<<<<<< HEAD
 📊 MarketMinds
 
 MarketMinds is an AI-powered financial chatbot that answers complex market and company-related questions by combining real financial data with company reports using Retrieval-Augmented Generation (RAG).
 
 Think of it as a junior financial analyst that never gets tired.
-
 
 🚀 What It Does
 
@@ -25,7 +22,6 @@ search company reports (PDFs), or
 
 combine both to generate a grounded, context-aware response.
 
-
 🧠 How It Works (High Level)
 User Query
    ↓
@@ -36,7 +32,6 @@ Data Retrieval (Stock API or Vector DB)
 LLM + Context (RAG)
    ↓
 Final Answer
-
 
 🛠️ Tech Stack
 
@@ -56,7 +51,6 @@ Frontend: Minimal chat interface
 
 Focus Areas: Data Engineering, AI Systems, Financial Analytics
 
-
 🎯 Why MarketMinds?
 
 Most tools analyze one data source at a time.
@@ -70,7 +64,6 @@ performs cross-source reasoning
 abstracts complex workflows into one simple question
 
 This mirrors how real financial analysts think.
-
 
 📌 Current Status
 
@@ -88,21 +81,7 @@ Advanced financial ratio analysis
 
 Multi-agent architecture
 
-
 👤 Author
 
 Built by Abhay Shinde
 Computer Engineering Student | Data & AI Enthusiast
-=======
-
-AWS Bedrock-powered financial agent for rapid research and report synthesis.
-
-## Structure
-
-- lambdas/: Core AWS Lambda backend functions
-- agent_schemas/: Tool definitions for Bedrock AgentCore
-- frontend/: Demo UI (optional)
-
-## Setup
-...
->>>>>>> 84b25ac (Archived the old project)
