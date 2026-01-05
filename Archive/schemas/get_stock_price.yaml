@@ -1,0 +1,17 @@
+tool:
+  name: get_stock_price
+  description: Get the current stock price for a ticker symbol from Alpha Vantage.
+  input_schema:
+    type: object
+    properties:
+      symbol:
+        type: string
+        description: Stock ticker symbol (e.g., IBM)
+    required: [symbol]
+  output_schema:
+    type: object
+    properties:
+      symbol:
+        type: string
+      current_price:
+        type: number

@@ -1,0 +1,17 @@
+tool:
+  name: query_earnings_report
+  description: Get link to company's earnings report PDF from S3.
+  input_schema:
+    type: object
+    properties:
+      company:
+        type: string
+        description: Company name (e.g., Nvidia)
+    required: [company]
+  output_schema:
+    type: object
+    properties:
+      company:
+        type: string
+      report_url:
+        type: string

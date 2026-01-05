@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.zip
+.env
+.venv/
+node_modules/
+*.pdf
+*.mp3

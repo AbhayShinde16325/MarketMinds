@@ -1,0 +1,15 @@
+tool:
+  name: summarize_earnings_report
+  description: Summarize company earnings report from PDF link.
+  input_schema:
+    type: object
+    properties:
+      report_url:
+        type: string
+        description: Direct link to PDF on S3
+    required: [report_url]
+  output_schema:
+    type: object
+    properties:
+      summary:
+        type: string
