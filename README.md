@@ -1,1 +1,1 @@
-# MedGuard
+# MarketMinds
