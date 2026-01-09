@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MarketMinds</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<div class="app">
+    <div class="header">
+        <h1>🧠 MarketMinds</h1>
+        <p>RAG-powered financial intelligence assistant</p>
+    </div>
+
+    <!-- CHAT AREA (THIS WAS MISSING) -->
+    <div id="chat" class="chat"></div>
+
+    <div class="input-area">
+        <textarea
+            id="question"
+            rows="2"
+            placeholder="Ask about markets, companies, or documents…"
+        ></textarea>
+        <button type="button" onclick="sendQuestion()">Ask</button>
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

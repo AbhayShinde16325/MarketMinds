@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env
+
+# Vector stores / generated data
+data/vector_store/
+
+# OS
+.DS_Store
